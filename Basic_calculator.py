@@ -1,14 +1,3 @@
-"""A simple calculator that can perform:
-Addition
-Subtraction
-Multiplication
-Division
-This teaches:
-✔ functions
-✔ operators
-✔ loops
-✔ handling errors like division by zero"""
-
 def inputforoperation():
     print("Enter the operation you would like to perform: \n1. Addition \n2. Subtraction \n3. Multiplication \n4. Division")
     print("--------------------------------------------")

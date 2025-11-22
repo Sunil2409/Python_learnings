@@ -6,42 +6,62 @@ def inputforoperation():
     print("-------------------")
     return Menu
 
-def calcultion():
+def add():
+    A = int(input("Enter the value of 1st Number: "))
+    B = int(input("Enter the value of 2nd Number: "))
+    print("--------------------------------------------")
+    print(f"Addition of {A} and {B} is:", A+B)
+    print("--------------------------------------------")
+
+def sub():
+    A = int(input("Enter the value of 1st Number: "))
+    B = int(input("Enter the value of 2nd Number: "))
+    print("--------------------------------------------")
+    print(f"Subtraction of {A} and {B} is:", A-B)
+    print("--------------------------------------------")    
+
+def mul():
+    A = int(input("Enter the value of 1st Number: "))
+    B = int(input("Enter the value of 2nd Number: "))
+    print("--------------------------------------------")
+    print(f"Multiplication of {A} and {B} is:", A*B)
+    print("--------------------------------------------")
+
+def div():
+        A = int(input("Enter the value of 1st Number: "))
+        B = int(input("Enter the value of 2nd Number: "))
+        
+        print("--------------------------------------------")
+        try:
+            print(f"Division of {A} and {B} is:", A/B)
+        except ZeroDivisionError:
+            print("You cannot divide by 0. Please enter a valid number") 
+        print("--------------------------------------------")
+
+
+def calculation():
     choice = inputforoperation()
     if choice == 1:
         #Addition
-        A = int(input("Enter the value of 1st Number: "))
-        B = int(input("Enter the value of 2nd Number: "))
-        print("--------------------------------------------")
-        print(f"Addition of {A} and {B} is:", A+B)
-        print("--------------------------------------------")
-
+        add()
     if choice == 2:
         #Subtraction
-        A = int(input("Enter the value of 1st Number: "))
-        B = int(input("Enter the value of 2nd Number: "))
-        print("--------------------------------------------")
-        print(f"Addition of {A} and {B} is:", A-B)
-        print("--------------------------------------------")
+        sub()
 
     if choice == 3:
         #Mulitplication
-        A = int(input("Enter the value of 1st Number: "))
-        B = int(input("Enter the value of 2nd Number: "))
-        print("--------------------------------------------")
-        print(f"Addition of {A} and {B} is:", A*B)
-        print("--------------------------------------------")
+        mul()
 
     if choice == 4:
         #Division
-        A = int(input("Enter the value of 1st Number: "))
-        B = int(input("Enter the value of 2nd Number: "))
-        print("--------------------------------------------")
-        print(f"Addition of {A} and {B} is:", A/B)
-        print("--------------------------------------------")
+        div()
 
-user = input("If you want to calculate something press 'y' Else type anyother Keys: ")
-while user.lower() == 'y':
-    calcultion()
-    user = input("If you want to calculate something press 'y' Else type anyother Keys: ")
 
+def main():
+    continuation = "y"
+    while continuation.lower()=="y":
+        calculation()
+        continuation = input("Do you want to continue? (y/n): ")
+
+if __name__ == "__main__":
+    main()

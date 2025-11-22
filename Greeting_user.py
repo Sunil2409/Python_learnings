@@ -12,7 +12,6 @@ def greetuser(Name,Age,Language):
 def main():
     Name, Age, Language = getuserdetails()
     greetuser(Name, Age, Language)
-    return
 
 if __name__ == "__main__":
     main()

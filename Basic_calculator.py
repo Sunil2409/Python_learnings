@@ -1,10 +1,15 @@
 def inputforoperation():
-    
-    print("Enter the operation you would like to perform: \n1. Addition \n2. Subtraction \n3. Multiplication \n4. Division")
-    print("--------------------------------------------")
-    Menu = int(input())
-    print("-------------------")
-    return Menu
+    try:
+        print("Enter the operation you would like to perform: \n1. Addition \n2. Subtraction \n3. Multiplication \n4. Division")
+        print("--------------------------------------------")
+        Menu = int(input())        
+        if Menu in [1,2,3,4]:
+            return Menu
+        else:
+            print("Invalid Choice! Please enter 1,2,3 or 4")
+    except ValueError:
+            print("Invalid Input ! Please enter a Number")
+            print("----------------------------------")
 
 def add():
     A = int(input("Enter the value of 1st Number: "))

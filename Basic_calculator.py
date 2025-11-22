@@ -1,4 +1,5 @@
 def inputforoperation():
+    
     print("Enter the operation you would like to perform: \n1. Addition \n2. Subtraction \n3. Multiplication \n4. Division")
     print("--------------------------------------------")
     Menu = int(input())
@@ -39,5 +40,8 @@ def calcultion():
         print(f"Addition of {A} and {B} is:", A/B)
         print("--------------------------------------------")
 
+user = input("If you want to calculate something press 'y' Else type anyother Keys: ")
+while user.lower() == 'y':
+    calcultion()
+    user = input("If you want to calculate something press 'y' Else type anyother Keys: ")
 
-calcultion()

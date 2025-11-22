@@ -1,8 +1,15 @@
 def display_menu():
-    print("Please select the temperature converter you would like to use.")
-    menu = int(input("1. Celsius to Fahrenheit \n" "2. Fahrenheit to Celsius\n"))
-    print("------------------------------------------------------------------------")
-    return menu
+    while True:
+        print("Please select the temperature converter you would like to use.")
+        try:
+            menu = int(input("1. Celsius to Fahrenheit \n" "2. Fahrenheit to Celsius\n"))
+            print("------------------------------------------------------------------------")
+            if menu in [1,2]:
+                return menu
+            else:
+                print("Invalid choice ! Please enter 1 or 2.\n")
+        except ValueError:
+            print("Invalid Input ! Please enter a Number")
 
 def inputfromuser():
     temperature = float(input("Please enter the value of temperature: "))

@@ -1,11 +1,3 @@
-"""A program that takes user details and prints a nicely formatted greeting.
-This teaches:
-✔ input
-✔ string formatting (f-strings)
-✔ simple logic
-✔ clean output styling"""
-
-
 Name = input("Enter your name: ")
 Age = input("Enter your Age: ")
 Language = input("Enter your Language: ")

@@ -1,0 +1,7 @@
+To run the scripts in the code folders, 
+execute the following command in your terminal. 
+
+
+docker run -it sunilkumar24/python_learnings:Advanced_Calculator
+docker run -it sunilkumar24/python_learnings:error_handling
+docker run -it sunilkumar24/python_learnings:password_generator

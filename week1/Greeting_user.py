@@ -4,7 +4,7 @@ def getuserdetails():
     Language = input("Enter your Language: ")
     return Name, Age, Language
 
-def greetuser(Name,Age,Language):
+def greetuser(Name, Age, Language):
     print("-----------------------------")
     print(f"Hello {Name}! 👋 \nYou are {Age} years old. \nYou're Favourite Language is {Language}.\nHave a great Day! ✨")
     print("-----------------------------")

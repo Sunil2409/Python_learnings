@@ -1,0 +1,5 @@
+If you want to run the basic_calculator:
+Open your terminal where python exists.
+run the following Command
+
+docker run -it sunilkumar24/python_learnings:Calculator

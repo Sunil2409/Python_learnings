@@ -1,6 +1,6 @@
-If you want to run the basic_calculator:
-Open your terminal where python exists.
-run the following Command
+To run the following script, 
+execute the following command in your terminal.
+
 
 docker run -it sunilkumar24/python_learnings:Calculator
 docker run -it sunilkumar24/python_learnings:Greeting_User

@@ -4,4 +4,4 @@ WORKDIR /week1
 
 COPY . .
 
-CMD [ "python3","basic_calculator.py" ]
+CMD [ "python3","basic_calculator.py" ] 

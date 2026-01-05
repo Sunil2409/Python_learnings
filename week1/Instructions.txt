@@ -1,4 +1,4 @@
-To run the following script, 
+To run the scripts in the code folders, 
 execute the following command in your terminal. 
 
 

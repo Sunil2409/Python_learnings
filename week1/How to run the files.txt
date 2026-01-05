@@ -3,3 +3,5 @@ Open your terminal where python exists.
 run the following Command
 
 docker run -it sunilkumar24/python_learnings:Calculator
+docker run -it sunilkumar24/python_learnings:Greeting_User
+docker run -it sunilkumar24/python_learnings:Temperature_converter
